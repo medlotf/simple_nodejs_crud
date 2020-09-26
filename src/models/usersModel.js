@@ -37,7 +37,7 @@ User.findById = function (id, result) {
 
 User.findAll = function (rq,result) {
     let order="";
-    if(rq.query.order !== null && (rq.query.order==="pseudo" || rq.query.order==="firstname" || rq.query.order==="lastname" || rq.query.order==="email" || rq.query.order==="id") ){
+    if(rq.query.order !== null && (rq.query.order==="pseudo" || rq.query.order==="firstname" || rq.query.order==="lastname" || rq.query.order==="email" || rq.query.order==="id" || rq.query.order==="created_at" || rq.query.order==="updated_at") ){
         let ascOrDesc=""
         if(rq.query.reverse !==null && (rq.query.reverse==="0" || rq.query.reverse==="1"))
         {
